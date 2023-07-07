@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/ui/css/create.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e6f9e6;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #ffffff;
+            margin: auto;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #888888;
+        }
+
+        h1 {
+            text-align: center;
+            color: #008000;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #dddddd;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        input[type=text]:focus {
+            border: 2px solid #004799;
+        }
+
+        button[type=submit] {
+            background-color: #3e87da;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button[type=submit]:hover {
+            background-color: #004799;
+        }
+
+        .signin {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signin a {
+            color: #3e87da;
+            text-decoration: none;
+        }
+
+        .signin a:hover {
+            text-decoration: underline;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background-color: #3e87da;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004799;
+}
+
+.signin {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signin a {
+  color: #008000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signin a:hover {
+  color: #005200;
+}
+
+.form-check, .dropdown-menu {
+  display: flex;
+}
+.dropdown-menu {
+  justify-content: space-around;
+}
+
+    </style>
+</head>
+<body>
+    <form action="/createpost" method="post">
+        <div class="container">
+            <h1>Create Post</h1>
+            <label for="title"><b>Title</b></label>
+            <input type="text" placeholder="Enter Title" name="title" required>
+            <label for="content"><b>Content</b></label>
+            <input type="text" placeholder="Enter Content" name="content" required>
+              <p>Please select your preferred contact method:</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="category" value="1" id="flexCheckDefault" >
+                  <label class="form-check-label" for="flexCheckDefault"> IT </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="category" value="2" id="flexCheckChecked" >
+                  <label class="form-check-label" for="flexCheckChecked"> Sport </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="category" value="3" id="flexCheckChecked" >
+                  <label class="form-check-label" for="flexCheckChecked"> Education </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="category" value="4" id="flexCheckChecked" >
+                  <label class="form-check-label" for="flexCheckChecked"> News </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="category" value="5" id="flexCheckChecked" >
+                  <label class="form-check-label" for="flexCheckChecked"> Health </label>
+                </div>
+                  <input class="btn btn-outline-success mx-1" type="reset" value="Reset">
+            <button type="submit" style="margin-bottom: 5px;">Create</button>
+            <a href="/"><button type="button">Back</button></a>
+            <div class="signin">
+               
+            </div>
+        </div>
+    </form>
+</body>
+</html>

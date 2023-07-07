@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Materials List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1>Materials List</h1>
+
+<ul id="materials">
+    {{range .}}
+    <li>
+        <strong>{{.Name}}</strong><br>
+        Subtopic: {{.Subtopic}}<br>
+        <a href="/getmaterial?name={{.Name}}">View Material</a>
+    </li>
+    {{end}}
+</ul>
+</body>
+</html>

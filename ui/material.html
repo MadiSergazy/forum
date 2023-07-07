@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Educational Materials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-top: 50px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    #add-material {
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 500px;
+    }
+
+    #add-material h2 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    #material-form label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    #material-form input[type="text"],
+    #material-form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      resize: none;
+      font-size: 14px;
+      color: #333;
+    }
+
+    #material-form textarea {
+      height: 100px;
+    }
+
+    #material-form button[type="submit"] {
+      background-color: #8bc34a;
+      color: #fff;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    #material-form button[type="submit"]:hover {
+      background-color: #9ccc65;
+    }
+  </style>
+</head>
+<body>
+<h1>Educational Materials</h1>
+
+<div id="add-material">
+  <h2>Add Material</h2>
+  <form id="material-form" method="POST" action="/add-material">
+    <label for="material-name">Material Name:</label>
+    <input type="text" id="material-name" name="material-name" required>
+    <br><br>
+    <label for="subtopic">Subtopic:</label>
+    <input type="text" id="subtopic" name="subtopic" required>
+    <br><br>
+    <label for="text-content">Text Content:</label>
+    <textarea id="text-content" name="text-content" rows="5" required></textarea>
+    <br><br>
+    <button type="submit">Add Material</button>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oops! Error Page</title>
+	<link rel="stylesheet" href="/ui/css/error.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			margin: 0;
+			padding: 20px;
+		}
+
+		.container {
+			width: 400px;
+			margin: auto;
+			background-color: #fff;
+			padding: 40px;
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+
+		h1 {
+			color: #333;
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+
+		.button {
+			display: inline-block;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 16px;
+			border: none;
+			text-decoration: none;
+			font-size: 16px;
+			border-radius: 4px;
+			transition: background-color 0.3s ease;
+		}
+
+		.button:hover {
+			background-color: #45a049;
+		}
+
+		.text-error {
+			display: block;
+			color: #FF0000;
+			font-size: 18px;
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Error</h1>
+	<a href="/" class="button">Go back</a>
+	<span class="text-error">
+            {{.Message}}
+        </span>
+</div>
+</body>
+</html>

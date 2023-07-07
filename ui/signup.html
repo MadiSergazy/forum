@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/ui/css/auth.css">
+  <title>SignUp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .containerSignUp {
+      width: 30%;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .registerbtn {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .registerbtn:hover {
+      background-color: #45a049;
+    }
+
+    .registerbtn:active {
+      background-color: #3e8e41;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .signin {
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .signin p {
+      margin: 0;
+    }
+
+    .signin a {
+      color: #4CAF50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div class="containerSignUp">
+  <form action="/sign-up" method="post">
+    <div class="container">
+      <h1>Register</h1>
+      <hr>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="repeatpsw"><b>Repeat password</b></label>
+      <input type="password" placeholder="Repeat password" name="repeatspw" required>
+
+      <hr>
+
+      <button type="submit" class="registerbtn">Register</button>
+      <a href="/"><button type="button" class="registerbtn">Back</button></a>
+    </div>
+
+    <div class="signin">
+      <p>Already have an account? <a href="/sign-in">SignIn</a>.</p>
+    </div>
+  </form>
+</div>
+</body>
+</html>
